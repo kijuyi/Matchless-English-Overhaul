@@ -1,0 +1,66 @@
+name: Localization bug
+description: Report mistranslated, awkward, untranslated, inconsistent, or broken text
+title: "[Localization] "
+labels: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for helping improve the English Overhaul. A screenshot plus a little context is usually enough to trace the affected string.
+
+  - type: input
+    id: version
+    attributes:
+      label: Mod version
+      description: Which English Overhaul version are you using?
+      placeholder: v1.0
+    validations:
+      required: true
+
+  - type: textarea
+    id: screenshot
+    attributes:
+      label: Screenshot
+      description: Drag and drop a screenshot here if possible.
+      placeholder: Attach screenshot here
+
+  - type: textarea
+    id: text
+    attributes:
+      label: Exact text
+      description: Copy the problematic English text if it is readable.
+      placeholder: Paste the exact line or label here
+
+  - type: textarea
+    id: context
+    attributes:
+      label: What was happening?
+      description: Describe the quest, event, panel, NPC interaction, combat, or system you were using.
+      placeholder: I was...
+    validations:
+      required: true
+
+  - type: input
+    id: location
+    attributes:
+      label: Location / system
+      placeholder: Sect Council, The Wilds, Meridian screen, NPC conversation...
+
+  - type: textarea
+    id: previous
+    attributes:
+      label: Previous action or choice
+      description: If relevant, what did you click or choose immediately before the problem appeared?
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: What seems wrong?
+      description: Optional. Explain what feels mistranslated, inconsistent, clipped, incorrect, or confusing.
+
+  - type: checkboxes
+    id: conflicts
+    attributes:
+      label: Translation mod conflicts
+      options:
+        - label: I tested without BET or another English translation mod enabled, if possible.
