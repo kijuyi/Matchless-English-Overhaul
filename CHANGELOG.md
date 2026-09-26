@@ -2,7 +2,7 @@
 
 All notable public changes to **The Matchless Kung Fu — English Overhaul** will be documented here.
 
-## v1.0.1 — In preparation
+## v1.0.1 — 2026-09-26
 
 v1.0.1 preserves the v1.0 localization baseline and incorporates UI/runtime fixes developed and tested after the v1.0 freeze.
 
@@ -33,7 +33,8 @@ v1.0.1 preserves the v1.0 localization baseline and incorporates UI/runtime fixe
 - frozen-candidate PAK SHA256: `48bcc43e15eb53ec252a2eadab9fea44c9143f48c3430eb05bcf047aa420e8a0`
 - frozen Workshop bootstrap SHA256: `6f676f23597cf05698119ff3a68a6938e463f683ebc4962614563269b06e6723`
 - PROBE088 passed byte-identity, mount, targeted-reload, and owner-observed UI regression gates
-- final public v1.0.1 release ZIP hash will be recorded after packaging
+- final public v1.0.1 release ZIP SHA256: `f737de134b0f13d44fa02311f04e99d09e0ffb769567525ca2e7504c76acc895`
+- FINAL092 confirmed the public-name ZIP is byte-identical to PACKAGE091
 
 ## v1.0 — Initial public release
 
@@ -79,4 +80,4 @@ v1.0.1 preserves the v1.0 localization baseline and incorporates UI/runtime fixe
 
 v1.0 is intentionally frozen.
 
-Subsequent confirmed corrections will be released as **v1.0.1+** rather than silently replacing the v1.0 content.
+Subsequent confirmed corrections after v1.0.1 will be released as **v1.0.2+** rather than silently replacing an existing release.
