@@ -24,8 +24,10 @@ v1.0.1 preserves the v1.0 localization baseline and incorporates UI/runtime fixe
 ### Release engineering
 
 - v1.0 remains immutable
-- the accepted late TB032 line is being recovered as the source for v1.0.1 rather than rebuilding changes from memory
-- final v1.0.1 PAK/ZIP hashes will be recorded after the exact accepted artifact is re-verified and frozen
+- recovered exact Candidate 004T (`7bbb8f50...`) in multiple preserved locations
+- identified the previously isolated manual PAK as Candidate 004U / SkillMasterySeparator (`48bcc43e...`), the newer live state immediately before the Workshop pivot
+- v1.0.1 will be frozen only after a Workshop-only regression pass selects between the preserved 004U latest-state candidate and its exact 004T parent
+- final v1.0.1 PAK/ZIP hashes will be recorded after the selected artifact is re-verified and frozen
 
 ## v1.0 — Initial public release
 
