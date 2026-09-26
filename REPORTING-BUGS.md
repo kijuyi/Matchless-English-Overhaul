@@ -33,7 +33,7 @@ Please report things such as:
 
 ## Before reporting
 
-Please mention that you are using **English Overhaul v1.0**.
+Please mention that you are using **English Overhaul v1.0.1**.
 
 If possible, reproduce the problem with other English-translation mods disabled. Mods that replace the same localization or UI assets can conflict.
 
@@ -43,6 +43,6 @@ Reports from **The Wilds**, advanced **Sect** systems, unusual event chains, and
 
 ## What happens after a report?
 
-The v1.0 release is frozen.
+The v1.0.1 release is frozen.
 
-Confirmed corrections will be collected and released in a new version such as **v1.0.1** rather than silently changing the existing v1.0 package.
+Confirmed corrections will be collected and released in a new version such as **v1.0.2** rather than silently changing the existing v1.0 package.
