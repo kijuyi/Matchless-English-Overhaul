@@ -2,8 +2,8 @@
 
 A comprehensive fan-made English localization overhaul for **The Matchless Kung Fu**.
 
-> **Current release:** v1.0  
-> **Tested Steam build:** 21727748  
+> **Current release:** v1.0.1  
+> **Tested game version:** 1.4.0.7  
 > **Standalone:** BET is **not** required.
 
 [Download the latest release](https://github.com/kijuyi/Matchless-English-Overhaul/releases/latest)
@@ -14,9 +14,9 @@ The Matchless Kung Fu is an unusually rich sandbox, but the official English loc
 
 This project grew from a simple translation cleanup into a much deeper localization effort. The goal is not to rewrite the game for stylistic preference, but to preserve the original Chinese meaning, gameplay information, character voice, humor, and wuxia/Jianghu atmosphere while making the English natural and readable.
 
-## What was reviewed for v1.0
+## What was reviewed
 
-The v1.0 project includes modern review and QA across the known English localization surfaces used by the tested build, including:
+The project includes modern review and QA across the known English localization surfaces used by the tested build, including:
 
 - **9,408** UI/localization IDs
 - **675** reconstructed conversation trees
@@ -46,6 +46,18 @@ AI output was **not treated as authoritative or accepted as raw machine translat
 Multiple AI systems were used at different stages of the project, alongside manual playtesting, screenshots, static analysis, and editorial adjudication.
 
 The goal was to use AI as a research and review tool to reduce the problems normally associated with machine-translated localization, not to ship another unreviewed MTL pass.
+
+## What's new in v1.0.1
+
+v1.0.1 preserves the reviewed v1.0 localization baseline and adds the post-v1.0 TB032 UI/runtime fixes validated through the private Workshop pipeline.
+
+Notable changes include:
+
+- improved main-menu character equipment-summary wrapping for long English names
+- improved Character-screen Gear name allocation and wrapping
+- preserved later Character Skills readability/layout refinements
+- retained Fashion/Nickname containment refinements
+- validated Steam Workshop delivery for game version 1.4.0.7 using the same localization PAK plus a small runtime bootstrap
 
 ## Installation
 
@@ -96,11 +108,11 @@ Other mods touching the same files may conflict depending on PAK load order. For
 
 ## Known limitations
 
-v1.0 is the frozen first public release after extensive editorial, static, and runtime QA.
+v1.0 remains the frozen first public release after extensive editorial, static, and runtime QA.
 
 The Matchless Kung Fu is a very large sandbox, so rare contextual issues can still exist—especially in unusual event combinations and less-tested advanced systems. **The Wilds** and some advanced **Sect** mechanics currently have less owner-observed runtime coverage than the main game.
 
-Community reports are welcome. Confirmed fixes after this freeze will be released as **v1.0.1+** rather than silently changing v1.0.
+Community reports are welcome. Confirmed fixes after v1.0.1 will be released as **v1.0.2+** rather than silently replacing an existing release.
 
 ## Reporting a problem
 
@@ -127,25 +139,25 @@ Especially useful reports include:
 
 See [REPORTING-BUGS.md](REPORTING-BUGS.md) for details.
 
-## v1.0 verification
+## v1.0.1 verification
 
 Public release ZIP SHA256:
 
 ```text
-71259554ab06fba090cafdca374a029d587b659921eb3676205ffbe178d3edfc
+f737de134b0f13d44fa02311f04e99d09e0ffb769567525ca2e7504c76acc895
 ```
 
 Installed mod PAK SHA256:
 
 ```text
-0589d33406c0b7e0524e627ee5080ca5699b05aa4743f7a6ec285ec3ec666898
+48bcc43e15eb53ec252a2eadab9fea44c9143f48c3430eb05bcf047aa420e8a0
 ```
 
-## Project policy after v1.0
+## Project policy after v1.0.1
 
-v1.0 is intentionally frozen.
+v1.0 and v1.0.1 are intentionally immutable after publication.
 
-Future changes should be tied to concrete bug reports, new runtime evidence, community feedback, or compatibility changes. They will be versioned as v1.0.1, v1.0.2, and so on.
+Future changes should be tied to concrete bug reports, new runtime evidence, community feedback, or compatibility changes. They will be versioned as v1.0.2, v1.0.3, and so on.
 
 ## Disclaimer
 
