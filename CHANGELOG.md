@@ -20,14 +20,20 @@ v1.0.1 preserves the v1.0 localization baseline and incorporates UI/runtime fixe
 - verified Workshop delivery byte-for-byte from the prepared carrier to Steam's Workshop cache and Matchless's live mod directory
 - verified the Workshop bootstrap mounts the localization PAK at runtime with mount point `../../../` and order `100`
 - confirmed `MountPak result=true` in the game log with no manual PAK required
+- identified a PuerTS startup-cache issue affecting the main-menu character hover under Workshop-only delivery
+- validated a targeted reload of only `EquipDescItem.js` and `CharacterHorverPanel.js`, restoring the intended hover without a global cache flush or prototype patching
+- preserved the exact known-good Workshop bootstrap after a simplified variant was shown to regress the hover
 
 ### Release engineering
 
 - v1.0 remains immutable
 - recovered exact Candidate 004T (`7bbb8f50...`) in multiple preserved locations
 - identified the previously isolated manual PAK as Candidate 004U / SkillMasterySeparator (`48bcc43e...`), the newer live state immediately before the Workshop pivot
-- v1.0.1 will be frozen only after a Workshop-only regression pass selects between the preserved 004U latest-state candidate and its exact 004T parent
-- final v1.0.1 PAK/ZIP hashes will be recorded after the selected artifact is re-verified and frozen
+- selected Candidate 004U as the v1.0.1 payload after Workshop-only runtime validation
+- frozen-candidate PAK SHA256: `48bcc43e15eb53ec252a2eadab9fea44c9143f48c3430eb05bcf047aa420e8a0`
+- frozen Workshop bootstrap SHA256: `6f676f23597cf05698119ff3a68a6938e463f683ebc4962614563269b06e6723`
+- PROBE088 passed byte-identity, mount, targeted-reload, and owner-observed UI regression gates
+- final public v1.0.1 release ZIP hash will be recorded after packaging
 
 ## v1.0 — Initial public release
 
