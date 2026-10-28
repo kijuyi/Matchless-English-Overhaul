@@ -2,7 +2,7 @@
 
 All notable public changes to **The Matchless Kung Fu — English Overhaul** will be documented here.
 
-## v1.0.2 — 2026-10-28 (staged; not published yet)
+## v1.0.2 — 2026-10-28
 
 **Editorial/localization maintenance:** reviewed dialogue and context corrections, improved sect-onboarding wording, `Roamer` identity handling, canonical martial mastery terminology including `Adept`, and optional-field formatting in head-item descriptions. Preserves the previously published v1.0.1 UI/runtime changes.
 
@@ -10,7 +10,7 @@ All notable public changes to **The Matchless Kung Fu — English Overhaul** wil
 
 **Deferred:** [#2 — `AdvanceAdept`/similar card headings lack spacing](https://github.com/kijuyi/Matchless-English-Overhaul/issues/2). Experimental Split Name&Surname 2.0 is excluded from v1.0.2.
 
-**Release asset:** not yet uploaded. [Candidate hash, release notes, package-layout verification and publication gates](docs/V1.0.2_RELEASE_NOTES.md). Do not switch the public latest-version label or installer instructions until the downloadable archive is verified.
+**Release asset:** [Matchless_English_Overhaul_v1.0.2.zip](https://github.com/kijuyi/Matchless-English-Overhaul/releases/download/v1.0.2/Matchless_English_Overhaul_v1.0.2.zip). [SHA256, installation layout and limitations](docs/V1.0.2_RELEASE_NOTES.md). GitHub release only; Steam Workshop update is separate.
 
 ## v1.0.1 — 2026-09-26
 
