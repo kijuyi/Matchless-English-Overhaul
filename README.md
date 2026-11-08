@@ -2,7 +2,7 @@
 
 A comprehensive fan-made English localization overhaul for **The Matchless Kung Fu**.
 
-> **Current release:** v1.0.2<br>
+> **Current release:** v1.0.3<br>
 > **Tested game version:** 1.4.0.7  
 > **Standalone:** BET is **not** required.
 
@@ -47,6 +47,32 @@ Multiple AI systems were used at different stages of the project, alongside manu
 
 The goal was to use AI as a research and review tool to reduce the problems normally associated with machine-translated localization, not to ship another unreviewed MTL pass.
 
+## What's new in v1.0.3
+
+- **Dialogue review:** a full editorial pass over the event dialogue, for natural wuxia English and consistent names and terms.
+  - The diary is written in the past tense.
+  - Punctuation is cleaned up throughout.
+- **His or her, sir or ma'am:** many lines now follow the gender of the NPC or of your character.
+  - This covers narration, options and replies that used "they" or a fixed "he".
+- **Biography:**
+  - Entries say "I", "me" and "my" instead of a fixed "Me".
+  - Fights, teaching, beheadings, your sect and the Kungfu Tournament read as real sentences, chosen by who started, who won and the kind of bout.
+  - Names appear without a relation label glued to them.
+  - Paragraphs are aligned, and every life stage and date ends with a colon, also on the loading screen.
+- **Character names:**
+  - Surname and given name are shown separately, for every surname, in dialogue, the character panel, combat and new biography entries.
+  - Dialogue headers read "Name — Role, Title".
+  - Names already split by another name mod stay as they are.
+- **Spacing:** removed the wide gap after commas and colons in dialogue and interface text, and fixed the spacing of NPC likes and dislikes.
+
+**Known limits:**
+
+- Biography entries written before this update keep their stored wording.
+- The relations panel, tournament and sect tips, and mail senders still show joined names.
+- No save migration is performed.
+
+[Release notes and known issue](docs/V1.0.3-RELEASE-NOTES.md) · [Changelog](CHANGELOG.md). Steam Workshop rollout is separate from this GitHub release.
+
 ## What's new in v1.0.2
 
 - Reviewed dialogue/context corrections and clearer sect guidance after joining.
@@ -69,14 +95,16 @@ Notable changes include:
 - retained Fashion/Nickname containment refinements
 - validated Steam Workshop delivery for game version 1.4.0.7 using the same localization PAK plus a small runtime bootstrap
 
-## Installation — v1.0.2 (Steam, Windows or Linux/Proton)
+<a id="installation--v102-steam-windows-or-linuxproton"></a>
 
-Download [Matchless_English_Overhaul_v1.0.2.zip](https://github.com/kijuyi/Matchless-English-Overhaul/releases/download/v1.0.2/Matchless_English_Overhaul_v1.0.2.zip) and verify its [SHA256](#v102-verification).
+## Installation — v1.0.3 (Steam, Windows or Linux/Proton)
 
-**v1.0.2 is a full runtime mod package. Do not use the old v1.0.1 PAK-only instructions.** This ZIP contains no `install_linux.sh` or `uninstall_linux.sh`. Its layout is:
+Download [Matchless_English_Overhaul_v1.0.3.zip](https://github.com/kijuyi/Matchless-English-Overhaul/releases/download/v1.0.3/Matchless_English_Overhaul_v1.0.3.zip) and verify its [SHA256](#v103-verification).
+
+**v1.0.3, like v1.0.2, is a full runtime mod package. Do not use the old v1.0.1 PAK-only instructions.** This ZIP contains no `install_linux.sh` or `uninstall_linux.sh`. Its layout is:
 
 ```text
-Matchless_EnglishOverhaul_v1.0.2/
+Matchless_EnglishOverhaul_v1.0.3/
   INSTALL.txt
   COMPONENTS.json
   CHANGELOG.md
@@ -97,7 +125,7 @@ The manual update below uses that existing subscribed item as the game's loader 
 ### Windows — manual update of the subscribed carrier
 
 1. Subscribe to the existing Workshop item above, let Steam finish downloading it, then close the game completely.
-2. Extract the ZIP. Open `Matchless_EnglishOverhaul_v1.0.2/mod/`.
+2. Extract the ZIP. Open `Matchless_EnglishOverhaul_v1.0.3/mod/`.
 3. Locate the **existing** Workshop cache folder for that item, in its Steam library:
 
    `<SteamLibrary>\steamapps\workshop\content\1696440\3808208955\`
@@ -114,7 +142,7 @@ Use the existing item folder under the library that actually stores its Workshop
 
 This applies to native and Flatpak Steam libraries; their library roots differ. Close the game **and Proton** first. Back up that item folder outside Steam, then copy the same three files from the extracted `mod/` directory into it. Preserve the exact case of `Src/Main.js`, `Content/Pak` and `WorkItem.json`. Do not copy into the Proton prefix or into `HMS_00/Content/Paks/`.
 
-Linux example, **after making the backup**, from inside the extracted `Matchless_EnglishOverhaul_v1.0.2` directory (replace the library path):
+Linux example, **after making the backup**, from inside the extracted `Matchless_EnglishOverhaul_v1.0.3` directory (replace the library path):
 
 ```bash
 MODROOT="/path/to/SteamLibrary/steamapps/workshop/content/1696440/3808208955"
@@ -128,13 +156,13 @@ Restart and enable the overhaul in Manage Mods. Native release QA was performed 
 
 ### Upgrading from a legacy PAK-only installation
 
-If you previously installed this overhaul directly into `HMS_00/Content/Paks/`, back up and remove **only the old standalone copy positively identified as this mod** before using the carrier installation. Do not remove original game PAKs or unrelated mods. A stale standalone PAK can override the new carrier's files. The v1.0.1 archive and its installers remain available on its immutable release page, but they are not v1.0.2 installers.
+If you previously installed this overhaul directly into `HMS_00/Content/Paks/`, back up and remove **only the old standalone copy positively identified as this mod** before using the carrier installation. Do not remove original game PAKs or unrelated mods. A stale standalone PAK can override the new carrier's files. The v1.0.1 archive and its installers remain available on its immutable release page, but they are not installers for v1.0.2 or later.
 
 ## Rollback / uninstallation
 
 Close the game and Proton, restore the three exact files from your pre-update carrier backup, then restart. Verify their hashes if recorded. Do not restore or modify saves to roll back mod files; mod rollback does not undo world progress.
 
-To remove the overhaul entirely, unsubscribe from its Workshop item and remove only any identified legacy standalone overhaul PAK you installed separately. Leave original game files and other mods untouched. There is no v1.0.2 uninstall script in this ZIP.
+To remove the overhaul entirely, unsubscribe from its Workshop item and remove only any identified legacy standalone overhaul PAK you installed separately. Leave original game files and other mods untouched. There is no uninstall script in the v1.0.3 ZIP.
 
 ## Compatibility
 
@@ -175,7 +203,23 @@ Especially useful reports include:
 
 See [REPORTING-BUGS.md](REPORTING-BUGS.md) for details.
 
-## v1.0.2 verification
+## v1.0.3 verification
+
+ZIP SHA256:
+
+```text
+e6d3bffc072dc3360c943e4b605a13f48a051f56e3eb1ad93c2c091398c34d97
+```
+
+Windows PowerShell: `Get-FileHash .\Matchless_English_Overhaul_v1.0.3.zip -Algorithm SHA256`
+
+Linux: `sha256sum Matchless_English_Overhaul_v1.0.3.zip`
+
+The three individual payload hashes are in `COMPONENTS.json` and the [release notes](docs/V1.0.3-RELEASE-NOTES.md#package-identity).
+
+<a id="v102-verification"></a>
+
+## v1.0.2 verification (historical)
 
 ZIP SHA256:
 
@@ -205,9 +249,9 @@ Installed mod PAK SHA256:
 
 ## Project policy
 
-v1.0 and v1.0.1 remain intact. Published release assets are immutable.
+v1.0, v1.0.1 and v1.0.2 remain intact. Published release assets are immutable.
 
-Future changes should be tied to concrete bug reports, new runtime evidence, community feedback, or compatibility changes. They will receive a new version, beginning with v1.0.3.
+Future changes should be tied to concrete bug reports, new runtime evidence, community feedback, or compatibility changes. They will receive a new version.
 
 ## Disclaimer
 

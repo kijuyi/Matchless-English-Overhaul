@@ -2,6 +2,32 @@
 
 All notable public changes to **The Matchless Kung Fu — English Overhaul** will be documented here.
 
+## v1.0.3 — 2026-11-07
+
+- **Dialogue review:** a full editorial pass over the event dialogue, for natural wuxia English and consistent names and terms.
+  - The diary is written in the past tense.
+  - Punctuation is cleaned up throughout.
+- **His or her, sir or ma'am:** many lines now follow the gender of the NPC or of your character.
+  - This covers narration, options and replies that used "they" or a fixed "he".
+- **Biography:**
+  - Entries say "I", "me" and "my" instead of a fixed "Me".
+  - Fights, teaching, beheadings, your sect and the Kungfu Tournament read as real sentences, chosen by who started, who won and the kind of bout.
+  - Names appear without a relation label glued to them.
+  - Paragraphs are aligned, and every life stage and date ends with a colon, also on the loading screen.
+- **Character names:**
+  - Surname and given name are shown separately, for every surname, in dialogue, the character panel, combat and new biography entries.
+  - Dialogue headers read "Name — Role, Title".
+  - Names already split by another name mod stay as they are.
+- **Spacing:** removed the wide gap after commas and colons in dialogue and interface text, and fixed the spacing of NPC likes and dislikes.
+
+**Known limits:**
+
+- Biography entries written before this update keep their stored wording.
+- The relations panel, tournament and sect tips, and mail senders still show joined names.
+- No save migration is performed.
+
+**Release asset:** [Matchless_English_Overhaul_v1.0.3.zip](https://github.com/kijuyi/Matchless-English-Overhaul/releases/download/v1.0.3/Matchless_English_Overhaul_v1.0.3.zip). [SHA256, installation layout and known issue](docs/V1.0.3-RELEASE-NOTES.md). GitHub release only; Steam Workshop update is separate.
+
 ## v1.0.2 — 2026-10-28
 
 **Editorial/localization maintenance:** reviewed dialogue and context corrections, improved sect-onboarding wording, `Roamer` identity handling, canonical martial mastery terminology including `Adept`, and optional-field formatting in head-item descriptions. Preserves the previously published v1.0.1 UI/runtime changes.
