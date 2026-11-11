@@ -2,7 +2,7 @@
 
 A comprehensive fan-made English localization overhaul for **The Matchless Kung Fu**.
 
-> **Current release:** v1.0.3<br>
+> **Current release:** v1.0.4<br>
 > **Tested game version:** 1.4.0.7  
 > **Standalone:** BET is **not** required.
 
@@ -46,6 +46,26 @@ AI output was **not treated as authoritative or accepted as raw machine translat
 Multiple AI systems were used at different stages of the project, alongside manual playtesting, screenshots, static analysis, and editorial adjudication.
 
 The goal was to use AI as a research and review tool to reduce the problems normally associated with machine-translated localization, not to ship another unreviewed MTL pass.
+
+## What's new in v1.0.4
+
+- **Interface review:** an editorial pass over the rest of the game's text outside events: items, Inner Kungfu and skill effects, buildings, the map and sects, buttons, notices, letters and encounters.
+  - Names and terms now match the dialogue, for example Sect Master, Sweethearts, Lot and Toxin Worm.
+  - Place, building and item names read naturally, for example Life-and-Death Pool, Phoenix Song Pavilion and wine starter.
+  - Chinese full-width punctuation in the interface is replaced with standard English punctuation.
+  - Buttons and labels use title case.
+- **Fixes:**
+  - Inner Kungfu tooltips no longer show a stray comma before the True Qi bonus.
+  - Line breaks in personality, trade and a few other tooltips no longer show as "\n".
+
+**Known limits:**
+
+- Biography entries written before this update keep their stored wording.
+- The relations panel, tournament and sect tips, and mail senders still show joined names.
+- A few rarely seen screens were reviewed in the text but not yet checked in game.
+- No save migration is performed.
+
+[Release notes and known issue](docs/V1.0.4-RELEASE-NOTES.md) · [Changelog](CHANGELOG.md).
 
 ## What's new in v1.0.3
 
@@ -97,14 +117,16 @@ Notable changes include:
 
 <a id="installation--v102-steam-windows-or-linuxproton"></a>
 
-## Installation — v1.0.3 (Steam, Windows or Linux/Proton)
+<a id="installation--v103-steam-windows-or-linuxproton"></a>
 
-Download [Matchless_English_Overhaul_v1.0.3.zip](https://github.com/kijuyi/Matchless-English-Overhaul/releases/download/v1.0.3/Matchless_English_Overhaul_v1.0.3.zip) and verify its [SHA256](#v103-verification).
+## Installation — v1.0.4 (Steam, Windows or Linux/Proton)
 
-**v1.0.3, like v1.0.2, is a full runtime mod package. Do not use the old v1.0.1 PAK-only instructions.** This ZIP contains no `install_linux.sh` or `uninstall_linux.sh`. Its layout is:
+Download [Matchless_English_Overhaul_v1.0.4.zip](https://github.com/kijuyi/Matchless-English-Overhaul/releases/download/v1.0.4/Matchless_English_Overhaul_v1.0.4.zip) and verify its [SHA256](#v104-verification).
+
+**v1.0.4, like v1.0.2 and v1.0.3, is a full runtime mod package. Do not use the old v1.0.1 PAK-only instructions.** This ZIP contains no `install_linux.sh` or `uninstall_linux.sh`. Its layout is:
 
 ```text
-Matchless_EnglishOverhaul_v1.0.3/
+Matchless_EnglishOverhaul_v1.0.4/
   INSTALL.txt
   COMPONENTS.json
   CHANGELOG.md
@@ -125,7 +147,7 @@ The manual update below uses that existing subscribed item as the game's loader 
 ### Windows — manual update of the subscribed carrier
 
 1. Subscribe to the existing Workshop item above, let Steam finish downloading it, then close the game completely.
-2. Extract the ZIP. Open `Matchless_EnglishOverhaul_v1.0.3/mod/`.
+2. Extract the ZIP. Open `Matchless_EnglishOverhaul_v1.0.4/mod/`.
 3. Locate the **existing** Workshop cache folder for that item, in its Steam library:
 
    `<SteamLibrary>\steamapps\workshop\content\1696440\3808208955\`
@@ -142,7 +164,7 @@ Use the existing item folder under the library that actually stores its Workshop
 
 This applies to native and Flatpak Steam libraries; their library roots differ. Close the game **and Proton** first. Back up that item folder outside Steam, then copy the same three files from the extracted `mod/` directory into it. Preserve the exact case of `Src/Main.js`, `Content/Pak` and `WorkItem.json`. Do not copy into the Proton prefix or into `HMS_00/Content/Paks/`.
 
-Linux example, **after making the backup**, from inside the extracted `Matchless_EnglishOverhaul_v1.0.3` directory (replace the library path):
+Linux example, **after making the backup**, from inside the extracted `Matchless_EnglishOverhaul_v1.0.4` directory (replace the library path):
 
 ```bash
 MODROOT="/path/to/SteamLibrary/steamapps/workshop/content/1696440/3808208955"
@@ -162,7 +184,7 @@ If you previously installed this overhaul directly into `HMS_00/Content/Paks/`, 
 
 Close the game and Proton, restore the three exact files from your pre-update carrier backup, then restart. Verify their hashes if recorded. Do not restore or modify saves to roll back mod files; mod rollback does not undo world progress.
 
-To remove the overhaul entirely, unsubscribe from its Workshop item and remove only any identified legacy standalone overhaul PAK you installed separately. Leave original game files and other mods untouched. There is no uninstall script in the v1.0.3 ZIP.
+To remove the overhaul entirely, unsubscribe from its Workshop item and remove only any identified legacy standalone overhaul PAK you installed separately. Leave original game files and other mods untouched. There is no uninstall script in the v1.0.4 ZIP.
 
 ## Compatibility
 
@@ -203,7 +225,23 @@ Especially useful reports include:
 
 See [REPORTING-BUGS.md](REPORTING-BUGS.md) for details.
 
-## v1.0.3 verification
+## v1.0.4 verification
+
+ZIP SHA256:
+
+```text
+3012973d6bbe0cc9f4f7ced7084ed4fc3eaa705390a491273381959d4f979a32
+```
+
+Windows PowerShell: `Get-FileHash .\Matchless_English_Overhaul_v1.0.4.zip -Algorithm SHA256`
+
+Linux: `sha256sum Matchless_English_Overhaul_v1.0.4.zip`
+
+The three individual payload hashes are in `COMPONENTS.json` and the [release notes](docs/V1.0.4-RELEASE-NOTES.md#package-identity).
+
+<a id="v103-verification"></a>
+
+## v1.0.3 verification (historical)
 
 ZIP SHA256:
 

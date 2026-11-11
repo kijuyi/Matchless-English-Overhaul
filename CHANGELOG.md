@@ -2,6 +2,26 @@
 
 All notable public changes to **The Matchless Kung Fu — English Overhaul** will be documented here.
 
+## v1.0.4 — 2026-11-10
+
+- **Interface review:** an editorial pass over the rest of the game's text outside events: items, Inner Kungfu and skill effects, buildings, the map and sects, buttons, notices, letters and encounters.
+  - Names and terms now match the dialogue, for example Sect Master, Sweethearts, Lot and Toxin Worm.
+  - Place, building and item names read naturally, for example Life-and-Death Pool, Phoenix Song Pavilion and wine starter.
+  - Chinese full-width punctuation in the interface is replaced with standard English punctuation.
+  - Buttons and labels use title case.
+- **Fixes:**
+  - Inner Kungfu tooltips no longer show a stray comma before the True Qi bonus.
+  - Line breaks in personality, trade and a few other tooltips no longer show as "\n".
+
+**Known limits:**
+
+- Biography entries written before this update keep their stored wording.
+- The relations panel, tournament and sect tips, and mail senders still show joined names.
+- A few rarely seen screens were reviewed in the text but not yet checked in game.
+- No save migration is performed.
+
+**Release asset:** [Matchless_English_Overhaul_v1.0.4.zip](https://github.com/kijuyi/Matchless-English-Overhaul/releases/download/v1.0.4/Matchless_English_Overhaul_v1.0.4.zip). [SHA256, installation layout and known issue](docs/V1.0.4-RELEASE-NOTES.md).
+
 ## v1.0.3 — 2026-11-07
 
 - **Dialogue review:** a full editorial pass over the event dialogue, for natural wuxia English and consistent names and terms.
